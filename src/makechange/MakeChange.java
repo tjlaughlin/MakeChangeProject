@@ -23,6 +23,11 @@ public class MakeChange {
 		double tendered = kb.nextDouble();
 		double change = (tendered + .00005) - price; 
 		
+		
+		
+		
+		
+		
 		int numOf20s = (int) change / 20;
 		int numOf10s = (int) change / 10;
 		int numOf5s = (int) change / 5;
@@ -31,6 +36,7 @@ public class MakeChange {
 		double numOfDs = (int) (change / .1);
 		double numOfNs = (int) (change / .05);
 		double numOfPs = (int) (change / .01);
+		
 		
 		if (price == tendered) {
 			System.out.println("you have provided the exact amount, thank you for coming and have a great day! ");
@@ -49,7 +55,7 @@ public class MakeChange {
 		
 
 	
-	System.out.println("Your change is: ");
+	System.out.print("Your change is: ");
 		
 	while (change > 0) {
 			
@@ -85,6 +91,7 @@ public class MakeChange {
 				numOfPs = (int) (change / .01);
 				System.out.print(+ numOfPs + " pennie(s)");
 				change -= numOfPs;
+		
 			}
 
 		}
